@@ -1,0 +1,2 @@
+# bughunt
+Bughunt gamification project
