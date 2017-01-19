@@ -1,0 +1,11 @@
+#leaderboard.card
+  .card-header
+    h4
+      = fa_icon "trophy"
+      |  Leaderboard
+  .card-body
+    - @leaderboard.each_with_index do |user, i|
+      .list-item
+        span.number = i + 1
+        a href="#" = user.username
+        span.score = user.score

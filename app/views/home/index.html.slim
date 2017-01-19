@@ -1,0 +1,29 @@
+#dashboard
+  #filter-bar
+    input type="text" placeholder="Filter bugs"
+    span#tags
+      - @tags.each do |tag|
+        span.clickable.label data-tag-id="#{tag.id}"
+          = tag.name
+
+  #controls.padded
+    #sorting
+      #sort-reward.clickable.label.clicked data-sort="desc"
+        = fa_icon "sort-amount-desc"
+        |  Order by Reward
+      #sort-date.clickable.label data-sort="desc"
+        = fa_icon "sort-amount-desc"
+        |  Order by Date
+    #new-bug.clickable.label
+      = fa_icon "plus"
+  #bugs.grid.padded
+    - @bugs.each do |bug|
+      .grid-item.clickable.padded.bug data-score="#{bug.score}" data-date="#{bug.created_at}"
+        .grid-header
+          = bug.name
+          span.score = "+#{bug.score}"
+        .grid-body
+          = bug.description
+          br
+          - bug.tags.each do |tag|
+            span.label data-tag-id="#{tag.id}" = tag.name

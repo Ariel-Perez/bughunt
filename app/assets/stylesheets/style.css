@@ -1,0 +1,115 @@
+*
+{
+    box-sizing: border-box;
+}
+
+a
+{
+    text-decoration: none;
+    color: inherit;
+}
+
+html
+{
+    color: #888;
+    background-color: #fcfcfc;
+}
+
+body
+{
+    font-family: 'Open Sans', sans-serif;
+    padding: 0px;
+    margin: 0px;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+header
+{
+    background-color: #8f4f1f;
+    box-shadow: 0px 4px 4px -2px rgba(0,0,0,0.75);
+    color: white;
+    padding: 5px 50px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+#content
+{
+    flex-grow: 1;
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    align-content: stretch;
+}
+
+#sidebar
+{
+    display: flex;
+    flex-direction: column;
+    min-width: 300px;
+    flex: 1 0 auto;
+}
+
+header h3
+{
+    margin: 0px;
+    height: 1.5em;
+    display: inline-block;
+}
+
+#login
+{
+    display: inline-block;
+    color: white;
+}
+
+.padded
+{
+    padding: 5px 25px;
+}
+
+.hidden
+{
+    display: none !important;
+}
+
+.clickable
+{
+    cursor: pointer;
+}
+
+/* LISTS */
+.list-item
+{
+    padding: 5px 25px;
+}
+
+.list-item:nth-child(2n)
+{
+    color: #888;
+    background-color: #eee;
+}
+
+@media handheld and (orientation: landscape)
+{
+    #timeline
+    {
+        display: none !important;
+    }
+
+    #content
+    {
+        flex-direction: column;
+    }
+
+    #sidebar
+    {
+        flex-direction: row;
+    }
+}

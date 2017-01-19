@@ -1,0 +1,26 @@
+#leaderboard .number
+{
+    display: inline-block;
+    width: 2em;
+    margin-right: 10px;
+    margin-left: -1em;
+    text-align: right;
+}
+
+#leaderboard .number:after
+{
+    content: ".";
+}
+
+#leaderboard .score
+{
+    display: inline-block;
+    float: right;
+    margin-left: 30px;
+    text-align: right;
+}
+
+#leaderboard #current-user
+{
+    background-color: #fde9c0;
+}

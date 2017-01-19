@@ -1,0 +1,9 @@
+#timeline.card
+  .card-header
+    h4
+      = fa_icon "clock-o"
+      |  Latest
+  .card-body
+    - @timeline.each do |event|
+      .list-item
+        = event.text

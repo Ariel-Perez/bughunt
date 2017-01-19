@@ -1,0 +1,18 @@
+doctype html
+html
+  head
+    title Bughunt
+    = csrf_meta_tags
+
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
+    = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
+
+    = stylesheet_link_tag params[:controller]
+    = javascript_include_tag params[:controller]
+
+    link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"
+  body
+    = render partial: 'layouts/header', locals: {title: @title}
+    #content
+      = render partial: 'layouts/sidebar'
+      = yield

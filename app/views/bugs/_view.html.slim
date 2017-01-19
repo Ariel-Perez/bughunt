@@ -1,0 +1,7 @@
+.bug
+  span = bug.name
+  span.score = "+#{bug.score}"
+  - if bug.tags
+    br
+    - bug.tags.each do |tag|
+      span.label = tag.name

@@ -1,0 +1,35 @@
+.label
+{
+    user-select: none;
+    display: inline-block;
+
+    padding: 2px 5px;
+    margin: 3px;
+    border-radius: 10px;
+
+    color: white;
+    background-color: #aaa;
+    font-weight: bold;
+    font-size: x-small;
+}
+
+.label.clickable
+{
+    font-size: initial;
+    padding: 2px 10px;
+}
+
+.label.clickable:hover
+{
+    background-color: #e7a61a;
+}
+
+.label.clickable.clicked
+{
+    background-color: #e7a61a;
+}
+
+.label.clickable.clicked:hover
+{
+    background-color: #d09000;
+}

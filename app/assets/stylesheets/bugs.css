@@ -1,0 +1,50 @@
+#topbugs .score, #bugs .score
+{
+    float: right;
+    margin-left: 30px;
+    text-align: right;
+}
+
+#topbugs .bug
+{
+    cursor: pointer;
+}
+
+#topbugs .bug h4
+{
+    margin: 0px;
+}
+
+#bugs
+{
+    display: flex;
+    flex-flow: row wrap;
+    align-content: stretch;
+}
+
+#bugs .bug .grid-header
+{
+    background-color: white;
+    color: inherit;
+    font-size: larger;
+    font-weight: bold;
+}
+
+#bugs .bug.grid-item
+{
+    position: relative;
+    border: 1px solid #ccc;
+
+    background-color: white;
+    color: inherit;
+
+    margin: 5px;
+
+    flex: 1 1 auto;
+}
+
+#bugs .bug.grid-item:hover
+{
+    top: -2px;
+    box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.75);
+}

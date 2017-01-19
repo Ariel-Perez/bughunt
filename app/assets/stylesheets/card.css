@@ -1,0 +1,27 @@
+.card
+{
+    display: flex;
+    flex-direction: column;
+
+    margin: 25px 25px;
+    border-radius: 4px;
+    box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.75);
+}
+
+.card .card-header
+{
+    padding: 5px 25px;
+    color: white;
+    background-color: #e7a61a;
+}
+
+.card .card-header h4
+{
+    margin: 0px;
+}
+
+.card .card-body
+{
+    flex-grow: 1;
+    background-color: white;
+}
